@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>hello</title>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/jstree/jstree.js"></script>
+<script src="neurodata.js"></script>
+<script src="exdata.js"></script>
+<script src="invxdata.js"></script>
+<link rel="stylesheet" href="lib/jstree/themes/default/style.css">
+<style type="text/css">
+#game {
+    position: relative;
+    background-image: url(bg.jpg);
+    width: 1280px;
+    height: 853px;
+}
+#extree {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    background: rgba(0,0,0,.3);
+    
+}
+
+#invxtree {
+    position: absolute;
+    top: 500px;
+    left: 700px;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    background: rgba(0,0,0,.3);    
+    
+}
+    
+#dxtree {
+    position: absolute;
+    top: 40px;
+    left: 700px;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    background: rgba(0,0,0,.3);    
+    
+}
+    
+.no_checkbox > i.jstree-checkbox {
+  display:none;
+}  
+    
+#ex_list {
+    position: absolute;
+    top: 460px;
+    left: 10px;
+}
+    
+#invx_list {
+    position: absolute;
+    top: 460px;
+    left: 700px;
+}
+    
+#clearEx {
+    position: absolute;
+    top: 480px;
+    left: 10px;
+}
+    
+#clearInvx {
+    position: absolute;
+    top: 480px;
+    left: 700px;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 640px;
+}
+
+#topRightButtons {
+    position: absolute;
+    top: 10px;
+    left: 950px
+    
+    }
+    
+    
+#dxButtons {
+    position: absolute;
+    top: 360px;
+    left: 700px;
+}
+
+</style>
+</head>
+<body>
+    <div id="game">
+        <div id="topRightButtons"></div>
+        <div id="extree"></div>
+        <div id="invxtree"></div>
+        <div id="dxtree"></div>
+        <div id="dxButtons"></div>
+        <div id="ex_list"></div>
+        <div id="clearEx"></div>
+        <div id="invx_list"></div>
+        <div id="clearInvx"></div>
+        <div id="score"></div>
+        
+    </div>
+    <script src="extree.js"></script>
+</body>
+</html>
